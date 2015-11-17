@@ -43,6 +43,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable line number
+set number
 " Sets how many lines of history VIM has to remember
 set history=500
 
@@ -55,8 +57,8 @@ set autoread
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
-let mapleader = ","
-let g:mapleader = ","
+let mapleader = " "
+let g:mapleader = " "
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -214,10 +216,6 @@ vnoremap <silent> # :call VisualSelection('b', '')<CR>
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
-
-" Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
-map <c-space> ?
 
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
