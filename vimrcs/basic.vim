@@ -104,7 +104,7 @@ endif
 set ruler
 
 " Height of the command bar
-set cmdheight=2
+set cmdheight=1
 
 " A buffer becomes hidden when it is abandoned
 set hid
@@ -163,7 +163,6 @@ catch
 endtry
 
 set background=dark
-
 " Set extra options when running in GUI mode
 if has("gui_running")
     set guioptions-=T
