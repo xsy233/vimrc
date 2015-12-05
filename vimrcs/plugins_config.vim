@@ -13,6 +13,18 @@ call pathogen#infect('~/.vim_runtime/sources_non_forked/{}')
 call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
+" => Vundle plugin
+""""""""""""""""""""""""""""""
+set rtp+=~/.vim_runtime/sources_non_forked/Vundle.vim
+call vundle#begin('~/.vim_runtime/sources_non_forked')
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdcommenter'
+
+call vundle#end()
+
+
+""""""""""""""""""""""""""""""
 " => bufExplorer plugin
 """"""""""""""""""""""""""""""
 let g:bufExplorerDefaultHelp=0
@@ -145,6 +157,10 @@ nnoremap <silent> <leader>d :GitGutterToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Neocomplate
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Disable preview windows
+set completeopt-=preview
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
 " Use neocomplete.
 let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
