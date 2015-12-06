@@ -222,6 +222,10 @@ vnoremap <silent> # :call VisualSelection('b', '')<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" add some Emacs key mappings
+noremap <C-a> <Home>
+noremap <C-e> <end>
+
 " Treat long lines as break lines (useful when moving around in them)
 map j gj
 map k gk
